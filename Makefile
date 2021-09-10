@@ -11,7 +11,7 @@ all: plugin
 
 clean: clean-cc clean-lib clean-plugin clean-test
 
-.PHONY: cc lib plugin test clean
+.PHONY: cc lib plugin test clean find-dl
 
 cc:
 	$(MAKE) -C cc
@@ -30,6 +30,10 @@ plugin: lib cc
 
 clean-plugin:
 	$(MAKE) -C plugin clean
+
+find-dl:
+	c++ find-dl.cc -ldl -o find-dl
+	./find-dl
 
 test: plugin
 	$(MAKE) -C test
