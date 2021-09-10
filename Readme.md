@@ -14,4 +14,7 @@ however
 ```
 nm -D -C plugin/build/ExamplePlugin.dll | grep l_Example_funA___boxed
 ```
-finds the symbol successfully.
+finds the symbol successfully and so does
+```
+make find-dl
+```
