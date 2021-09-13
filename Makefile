@@ -36,7 +36,7 @@ find-dl:
 	./find-dl
 
 test: plugin
-	$(MAKE) -C test
+	LD_PRELOAD=$(PWD)/plugin/build/ExamplePlugin.dll $(MAKE) -C test
 
 clean-test:
 	$(MAKE) -C test clean

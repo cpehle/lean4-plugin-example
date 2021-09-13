@@ -1,5 +1,7 @@
+#include <stdint.h>
+
 extern "C" {
-int funA(int a) {
+int funA(uint64_t a) {
     return a * a;
 }
 }
