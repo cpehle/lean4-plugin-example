@@ -40,7 +40,7 @@ symbols from the generated dynamic library by using ```LD_PRELOAD=$(PWD)/plugin/
 
 ## Using the Plugin in VSCode
 
-If you navigate to the ```test/out/ex/ex0.lean``` file, you will hopefully see that evaluation
+If you navigate to the ```test/out/ex/ex0.lean``` file with Visual Studio Code, you will hopefully see that evaluation
 of the function defined in the plugin just works. This is due to workspace setting in ```.vscode/settings.json```. It tells the language server to use the ```./leanWithPlugin.sh``` script instead of the vanilla
 ```lean``` executable. Otherwise one would get the error
 
